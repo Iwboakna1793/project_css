@@ -1,0 +1,44 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.Container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.Container > .box {
+    width: 400px;
+    height: 400px;
+    border-radius: 20px;
+    background-color: aquamarine;
+}
+
+@media (max-width: 768px) {
+    .Container{
+        gap: 20px;
+
+    }
+    .Container > .box {
+        width: 200px;
+        height: 200px;
+        background-color: brown;
+    }
+}
+
+@media (max-width: 400px) {
+    .Container {
+        flex-direction: column;
+
+    }
+    .Container > .box {
+        width: 90%;
+        height: 100px;
+        background-color: blueviolet;
+    }
+}
